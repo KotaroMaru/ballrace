@@ -146,13 +146,13 @@ public class TitleScreenManager : MonoBehaviour
     {
         if (player1 != null)
         {
-            player1.ID = 0;
+            player1.ID = 1;
             // isAI は PlayerController2 のインスペクター設定を優先する。
         }
 
         if (player2 != null)
         {
-            player2.ID = 1;
+            player2.ID = 2;
             // isAI は PlayerController2 のインスペクター設定を優先する。
             // SelectedMode はUI上の選択状態として保持するが、車の操作種別は変更しない。
         }

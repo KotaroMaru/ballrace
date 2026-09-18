@@ -7,7 +7,7 @@ public class PlayerController2 : MonoBehaviour
     float moveSpeed = 5.0f;
     float rotateSpeed = 30.0f;
 
-    public int ID;
+    public int ID = 1;   // 1P = 1, 2P = 2
 
     KeyCode forwardKey;
     KeyCode backwardKey;
@@ -52,7 +52,7 @@ public class PlayerController2 : MonoBehaviour
     {
         currentHp = maxHp;
 
-        if(ID == 0)
+        if(ID == 1)
         {
             forwardKey = KeyCode.W;
             backwardKey = KeyCode.S;
@@ -61,7 +61,7 @@ public class PlayerController2 : MonoBehaviour
             runKey = KeyCode.LeftShift;
             attackKey = KeyCode.Space;
         }
-        else if (ID == 1)
+        else if (ID == 2)
         {
             forwardKey = KeyCode.UpArrow;
             backwardKey = KeyCode.DownArrow;
